@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Адаптивная вёрстка
+# goit-markup-hw-07
+BEM and SASS

@@ -1,0 +1,50 @@
+.footer {
+    background-color: #2F303A;    
+    }
+
+    .link .tel-footer {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;      
+        letter-spacing: 0.03em;
+        color: var(--link-mailto-footer);
+    }
+    .footer__container {
+        width: 231px;
+        margin-right: 70px;        
+    }
+
+    .footer-blok {
+         display: flex;
+    }
+
+    .footer__link.link {
+        margin-bottom: 20px;
+        transition: fill var(--animation);
+        transition: background-color var(--transition-whole);
+    }
+    .footer {        
+        padding-top: 60px;
+        padding-bottom: 60px;       
+        
+    }
+
+    .page-footer {
+        margin-bottom: 20px;;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .footer-mailing {
+        margin-left: 110px;
+        min-width: 300px;
+    }
+
+    .form-footer {
+        display: flex;
+    }

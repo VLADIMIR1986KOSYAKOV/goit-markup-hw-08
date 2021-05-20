@@ -1,0 +1,52 @@
+.menu__decor::after {
+    position: absolute;
+    display: flex;
+    background-color: var(--accent-color);
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: var(--transition-transform);
+    &:hover::after,
+    &:focus::after {
+      transform: scaleX(1);
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;            
+}
+
+.menu__item {
+    position: relative;
+    margin-right: 50px; 
+    &:last-child {
+        margin-right: 0;
+    }   
+}
+
+.menu__activ-studio {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &::after {
+        position: absolute;
+        display: flex;
+        background-color: var(--accent-color);
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    }
+}
+
+.menu__decor {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+

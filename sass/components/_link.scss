@@ -1,0 +1,116 @@
+.link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-whole);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition: color var(--transition-whole);
+    }
+}
+
+.link.current{
+    color: var(--accent-color)   
+}
+
+
+.mailto-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--mailto-footer);
+    transition:  color var(--animation);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.menu-link {
+    display: flex;
+    transition: color var(--animation);
+    margin-left: auto;
+}
+
+.link-mailto {    
+    display: flex;
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--mailto-color);       
+    display: block;
+    font-weight: normal;    
+    line-height: 1.71;        
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+      stroke: currentColor;
+    }  
+    &:last-child {
+        margin-right: 0;
+    }  
+    &:hover .icon-letter,
+    &:focus .icon-letter {
+    fill: var(--accent-color); 
+    }
+}
+
+.list-link {
+    margin-right: 50px;
+    align-items: center;
+    transition: color var(--animation);
+}
+
+.link-tel {
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--mailto-color);
+    transition: color var(--animation);
+    &:hover .icon-smartfone,
+    &:focus .icon-smartfone {
+    fill: var(--accent-color); 
+    }
+}
+
+.tel-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--mailto-footer);
+    transition: color var(--animation);
+} 
+
+  .letter-link {   
+    margin-right: 10px;  
+    width: 16px;
+    height: 16px;
+    &:hover .icon-letter,
+    &:focus .icon-letter {
+      fill: var(--accent-color)
+    }
+  } 
+
+  .smartfone-link {
+    margin-right: 10px;  
+    width: 16px;
+    height: 16px;
+    &:hover .icon-smartfone,
+    &:focus .icon-smartfone {
+      fill: var(--accent-color)
+    } 
+  }
+  
+    .examples-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        &:hover,
+        &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }

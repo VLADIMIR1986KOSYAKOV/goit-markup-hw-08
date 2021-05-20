@@ -1,0 +1,54 @@
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/Img9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
+
+.examples-overlay {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+    
+}
+
+.item-examples-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(0);
+    transition: var(--transition-transform);
+  }
+  
+  .examples-link:focus .item-examples-overlay,
+  .examples-link:hover .item-examples-overlay {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+
+.examples-overlay .text-examples {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 322px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-align: start;
+    color: #fff;
+}
+ 

@@ -1,0 +1,69 @@
+.icon,
+.client-icon {
+      fill: var(--icon-color);    
+  }
+
+  .icon-footer {
+    fill: var(--icon-footer-color);
+    transition: fill var(--transition-whole);
+  }  
+
+  .icon {
+    transition: fill var(--transition-whole);
+  }
+  
+  .client-icon {
+    display: flex;
+    max-height: 45px;
+  }
+
+
+  .client-icon-link {
+    display: flex;
+    align-items: center;  
+    width: 170px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: color var(--transition-whole);
+
+    &:hover .client-icon,
+    &:focus .client-icon {
+    fill: var(--accent-color);
+    transition: color var(--transition-whole);  
+    }
+    &:hover,
+    &:focus {
+    border: 1px solid var(--accent-color);  
+    }     
+  }
+
+.clients-icon-link .icon {
+    fill: currentColor;
+}
+
+.icon .client-icon {
+    fill: var(--icon-color);
+}
+
+.icon-letter {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-smartfone {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+.btn-close:hover .btn-close-icon{
+    fill: var(--accent-color);
+}
+
+.smartfone {
+  display: flex;
+  align-items: center;
+}

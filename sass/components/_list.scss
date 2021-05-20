@@ -1,0 +1,109 @@
+
+.list,
+.list-command {
+    list-style: none;    
+  }   
+
+.list-command {
+      color:#fff;
+  }
+
+.page-list-command {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.list-mark {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.list-mark__mark-item {
+    width: 270px; 
+    &::before{
+        content: "";
+        display: block;
+        height: 120px;        
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        background-position: center;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    } 
+    &:nth-child(1)::before {        
+        background-image: url(../images/studio/mark-items/antenna.svg);
+    }
+    &:nth-child(2)::before {
+        background-image: url(../images/studio/mark-items/clock.svg);
+    } 
+    &:nth-child(3)::before {
+        background-image: url(../images/studio/mark-items/diagram.svg);
+    }
+    &:nth-child(4)::before {
+        background-image: url(../images/studio/mark-items/astronaut.svg);
+    }
+}
+
+.list-mark .list-mark__mark-item +& {
+    margin-left: 30px;
+} 
+
+.list {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}   
+
+.list-work {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-work .work-item +& {
+    margin-left: 30px;
+}
+.list-command {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-command .command-item +& {
+    margin-left: 30px;
+}
+.page-list-command {
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.filter-list {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 50px;             
+}
+
+.filter-list .filter-item + & {
+    margin-left: 8px;      
+}
+.cards-list {
+    display: flex;        
+    flex-wrap: wrap;        
+    margin: -15px;       
+}
+
+.portfolio-blok {
+padding: 20px 24px;
+border-left: 1px solid var(--examples-border-color);
+border-right: 1px solid var(--examples-border-color);
+border-bottom: 1px solid var(--examples-border-color);
+      
+}

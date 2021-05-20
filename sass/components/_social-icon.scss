@@ -1,0 +1,80 @@
+.social-icons .icon {
+    width: 20px;
+    height: 20px;
+    transition: fill var(--animation);
+
+}
+
+.social-icons-footer .icon-footer {
+  width: 20px;    
+  height: 20px;
+  transition: fill var(--animation);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    transition: fill var(--animation);
+    
+}
+
+.social-icons-footer {
+  display: flex;
+  transition: background-color var(--transition-whole);
+}
+.connection {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition-whole);
+  &:hover .icon,
+  &:focus .icon {
+    fill: #fff;
+  }
+  &:hover,
+  &:focus {
+      background-color: var(--accent-color);
+  }
+  &:hover .icon-smartfone,
+  &:focus .icon-smartfone {
+      fill: var(--accent-color)
+  }
+}
+
+.social-icons-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);;
+  border-radius: 50%;
+  transition: background-color var(--transition-whole);
+  &:hover {
+    color: var(--accent-color);
+    transition: background-color var(--transition-whole); 
+ } 
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-icons-item + & {
+    margin-left: 10px;
+}
+
+
+  
+
+  
+
+  

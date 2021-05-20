@@ -1,0 +1,111 @@
+.title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;       
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+    transition: color var(--animation);
+}
+
+.title-section {
+    background-color: #2F303A;
+}
+
+.title-hero {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+     
+}
+
+    .list-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+    .page-list-title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+
+    .page-title {
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        min-width: 380px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+
+    .title-list-command {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;        
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+
+    .title-list-blok {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .page-title-portfolio {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color: var(--page-title-portfolio);
+    }
+
+    .whatwe-do-title {
+        display: flex;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        align-items: center;
+        letter-spacing: 0.03em;
+        }
+
+        .title {
+            color: var(--title-color);
+          }
+
+    .title-list-command,
+    .page-list-command {
+        text-align: center;
+    }
+    .page-title-portfolio,
+    .page-portfolio {
+        width: 322px;
+        
+    }
+
+    .page-title-portfolio {
+     margin-bottom: 4px;
+    }
+    
