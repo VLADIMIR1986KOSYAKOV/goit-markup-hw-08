@@ -6,7 +6,7 @@
     background-color: #fff;
 }
 
-.client-item + & {
+.client-item + .client-item {
     margin-left: 30px;
 }  
 

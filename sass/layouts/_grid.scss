@@ -6,9 +6,9 @@
   }
   
   .grid__grid-item
-   {
-    flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));        
-    margin-top: 30px;    
+   {flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));            
+    margin-top: 30px; 
+    
   }
 
   .grid__about-item {
