@@ -21,24 +21,21 @@
     margin-left: auto;
     margin-right: auto;
     
-        @media screen and(min-width: 480px) {
-            width: 450px; 
-        }
-        @media screen and(min-width: 768px) {
-            width: 354px; 
-        }
-        @media screen and(min-width: 1200px) {
-            width: 270px; 
-        }   
-        @media screen and(min-width: 1200px) {
-            display: flex;
-            
-            }
-           
 }
 
 .list-mark__mark-item {
-    
+    @media screen and(min-width: 768px)
+        {
+           width: calc((100% - 30px * 1) / 1);          
+        }
+        @media screen and(min-width:768px)
+         {
+            width: calc((100% - 30px * 2) / 2);            
+         }
+         @media screen and(min-width:1200px)
+         {
+            width: calc((100% - 30px * 4) / 4);            
+         }
     &::before{
         content: "";
         display: block;
@@ -51,6 +48,8 @@
         margin-bottom: 30px;
         margin-top: 30px;       
         
+     
+  
     }
     &:nth-child(1)::before {        
         background-image: url(../images/studio/mark-items/antenna.svg);

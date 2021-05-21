@@ -717,27 +717,21 @@ address {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .list-mark {
-    width: 450px;
+@media screen and (min-width: 768px) {
+  .list-mark__mark-item {
+    width: calc((100% - 30px * 1) / 1);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .list-mark {
-    width: 354px;
+  .list-mark__mark-item {
+    width: calc((100% - 30px * 2) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .list-mark {
-    width: 270px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .list-mark {
-    display: flex;
+  .list-mark__mark-item {
+    width: calc((100% - 30px * 4) / 4);
   }
 }
 
@@ -1335,6 +1329,8 @@ textarea {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0px;
+  padding-left: 0px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -1347,6 +1343,12 @@ textarea {
 .grid__about-item {
   --grid-item: 3;
   margin-left: 30px;
+}
+
+.section-mark {
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
