@@ -20,10 +20,7 @@
     width: 100%;    
     margin-left: auto;
     margin-right: auto;
-    @media screen and(min-width: 1200px) {
-        display: flex;
-        }
-
+    
         @media screen and(min-width: 480px) {
             width: 450px; 
         }
@@ -33,7 +30,11 @@
         @media screen and(min-width: 1200px) {
             width: 270px; 
         }   
-    
+        @media screen and(min-width: 1200px) {
+            display: flex;
+            
+            }
+           
 }
 
 .list-mark__mark-item {
@@ -47,9 +48,10 @@
         background-position: center;
         background-color: #F5F4FA;
         border-radius: 4px;
-        margin-bottom: 30px;       
+        margin-bottom: 30px;
+        margin-top: 30px;       
         
-    } 
+    }
     &:nth-child(1)::before {        
         background-image: url(../images/studio/mark-items/antenna.svg);
     }

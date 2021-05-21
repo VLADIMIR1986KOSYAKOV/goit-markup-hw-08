@@ -717,12 +717,6 @@ address {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1200px) {
-  .list-mark {
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .list-mark {
     width: 450px;
@@ -741,6 +735,12 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .list-mark {
+    display: flex;
+  }
+}
+
 .list-mark__mark-item::before {
   content: "";
   display: block;
@@ -751,6 +751,7 @@ address {
   background-color: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .list-mark__mark-item:nth-child(1)::before {
@@ -1348,8 +1349,17 @@ textarea {
   margin-left: 30px;
 }
 
-.section-mark {
-  padding: 94px;
+@media screen and (min-width: 1200px) {
+  .section-mark {
+    padding: 94px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-mark {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .doing-section {
