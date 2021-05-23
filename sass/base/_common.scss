@@ -9,12 +9,14 @@ html {
     outline: 1px solid red;
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+
 p {
 	margin-top: 0;
     margin-bottom: 0;
@@ -38,8 +40,17 @@ body {
 }
 .img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    @media screen and(min-width:480px) {
+        max-width: calc((100% - 30px * 1) / 1);
+    }
+    @media screen and(min-width:768px) {
+        max-width: calc((100% - 30px * 2) / 2);
+    }
+    @media screen and(min-width:768px) {
+        max-width: calc((100% - 30px * 4) / 4);
+    }
     }
 
 

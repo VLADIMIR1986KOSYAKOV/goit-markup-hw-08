@@ -8,7 +8,9 @@ background-color: red;
 
         @media screen and (min-width: 480px) {
                 max-width: 480px;  
-                background-color: aqua;      
+                background-color: aqua;
+                margin-right: auto;
+                margin-left: auto;   
         }
 
         @media screen and (min-width: 768px) {
