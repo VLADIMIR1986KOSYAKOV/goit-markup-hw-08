@@ -817,7 +817,7 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-command {
     display: flex;
-    width: 768px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1079,13 +1079,13 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .command-item {
-    flex-basis: calc((100% - 30px * 2) / 2);
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command-item {
-    flex-basis: calc((100% - 30px * 4) / 4);
+    flex-basis: calc((100%-30px*4)/4);
   }
 }
 
