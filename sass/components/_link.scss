@@ -45,6 +45,11 @@
     line-height: 1.71;        
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    @media screen and(min-width:480px) and(max-width:767px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
     &:hover,
     &:focus {
       stroke: currentColor;
@@ -71,6 +76,11 @@
     letter-spacing: 0.02em;
     color: var(--mailto-color);
     transition: color var(--animation);
+    @media screen and(min-width:480px) and(max-width:767px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
     &:hover .icon-smartfone,
     &:focus .icon-smartfone {
     fill: var(--accent-color); 

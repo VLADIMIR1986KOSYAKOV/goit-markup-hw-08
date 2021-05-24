@@ -11,18 +11,44 @@
         color: var(--link-mailto-footer);
     }
     .footer__container {
-        width: 231px;
-        margin-right: 70px;        
+        @media screen and(min-width:1200px) {
+            width: 231px;
+            margin-right: 70px;
+        }   
+        @media screen and(min-width:480px) {
+            display: block;
+            align-content: space-between;
+            margin-bottom: 60px;
+        }            
     }
 
     .footer-blok {
-         display: flex;
+        
+        @media screen and(min-width:480px) and(max-width:767.98px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-between;
+        }
+        @media screen and(min-width:1200px) {
+            display: flex;         
+            
+        }
+         
     }
 
     .footer__link.link {
         margin-bottom: 20px;
         transition: fill var(--animation);
         transition: background-color var(--transition-whole);
+    }
+
+    .footer__link{
+        @media screen and(min-width:480px) and(max-width:767px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
     .footer {        
         padding-top: 60px;
@@ -39,12 +65,35 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
+        @media screen and(min-width:480px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
     .footer-mailing {
+       @media screen and(min-width:1200px) {
         margin-left: 110px;
         min-width: 300px;
+       }
+       @media screen and(min-width:480px) and(max-width:767px) {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: unset;
+        width: 450px;
+        margin-left: 0;
+        margin-top: 60px;
+       }
     }
 
     .form-footer {
-        display: flex;
+        @media screen and(min-width:1200px) {
+            display: flex;
+           }
+
+           @media screen and(min-width:480px) {
+            display: block;
+           }
+        
     }

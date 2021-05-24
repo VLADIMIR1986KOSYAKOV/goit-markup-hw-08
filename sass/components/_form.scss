@@ -108,7 +108,8 @@
     }        
     }
 
-    .signup-input {        
+    .signup-input { 
+        @media screen and(min-width:1200px) {
         width: 358px;
         height: 50px;
         padding-left: 16px;
@@ -117,7 +118,21 @@
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        background-color:#2F303A;
+        background-color:#2F303A;  
+        }      
+        @media screen and(min-width:480px) {
+            width: 450px;
+            height: 50px;
+            padding-left: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-sizing: border-box;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            background-color:#2F303A;  
+            }       
+        
+        
         
         &::placeholder {
             font-family: Roboto;
