@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-text-color: #212121;
   --accent-color: #2196F3;
@@ -116,13 +115,11 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: red;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    background-color: aqua;
     margin-right: auto;
     margin-left: auto;
   }
@@ -131,14 +128,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    background-color: yellow;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    background-color: green;
   }
 }
 
@@ -729,20 +724,37 @@ address {
 }
 
 .list-mark {
+  display: flex;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .list-mark {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .list-mark {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .list-mark__mark-item {
-    width: calc((100% - 30px * 1) / 1);
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .list-mark__mark-item {
     width: calc((100% - 30px * 2) / 2);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -808,7 +820,7 @@ address {
 @media screen and (min-width: 1200px) {
   .list-command {
     display: flex;
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -817,6 +829,7 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-command {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -857,16 +870,6 @@ address {
   border-bottom: 1px solid var(--examples-border-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .clients {
-    display: flex;
-    width: 1005;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-  }
-}
-
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients {
     display: flex;
@@ -890,14 +893,19 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  .client-item + .client-item {
-    margin-left: 30px;
+  .clients {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .client-item {
-    width: calc((100%-45px)/2);
+    width: calc((100%-3*30px)/2);
+    padding: 7.5px;
   }
 }
 
@@ -907,9 +915,10 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .client-item {
-    width: calc((100%-30px*6)/6ы);
+    display: flex;
+    width: calc((100%-30px*6)/6);
   }
 }
 
@@ -1074,12 +1083,14 @@ address {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .command-item {
     width: 100%;
+    margin-bottom: 30px;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .command-item {
-    width: 354px;
+    flex-basis: calc((100%-30px*2)/2);
   }
 }
 
@@ -1452,12 +1463,6 @@ textarea {
   width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section-mark {
-    padding: 94px;
-  }
 }
 
 @media screen and (max-width: 480px) {

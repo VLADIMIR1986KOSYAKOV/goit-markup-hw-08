@@ -15,20 +15,32 @@
 }
 
 .list-mark {
+    display: flex;
     width: 100%;    
     margin-left: auto;
     margin-right: auto;
-    
+    @media screen and(min-width: 480px)
+    {
+       display: block;          
+    } 
+    @media screen and(min-width: 768px)
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;         
+    }  
 }
 
 .list-mark__mark-item {
-    @media screen and(min-width: 768px)
+    @media screen and(min-width: 480px)
         {
-           width: calc((100% - 30px * 1) / 1);          
+           width:100%;          
         }
         @media screen and(min-width:768px)
          {
-            width: calc((100% - 30px * 2) / 2);            
+            width: calc((100% - 30px * 2) / 2);
+            margin-left:auto;
+            margin-right: auto;           
          }
          @media screen and(min-width:1200px)
          {
@@ -92,13 +104,14 @@
     
     @media screen and(min-width:1200px) {
     display: flex;
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;  
     }
 
     @media screen and(min-width:768px) and(max-width:1199px){
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         margin-left: auto;
         margin-right: auto;  
