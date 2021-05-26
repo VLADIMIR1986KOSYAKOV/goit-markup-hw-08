@@ -28,9 +28,15 @@
 }
 
 .menu-link {
+  @media screen and(max-width:767.98px) {
+    display: none;
+  }
+  @media screen and(min-width:768px) {
     display: flex;
     transition: color var(--animation);
     margin-left: auto;
+  }
+    
 }
 
 .link-mailto {    
@@ -39,7 +45,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--mailto-color);       
+    color: #757575;       
     display: block;
     font-weight: normal;    
     line-height: 1.71;        

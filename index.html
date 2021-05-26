@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- <header class="page__header">   
+    <header class="page__header">   
         <div class="container">
         <nav class="navigation">
             <a class="link header__logo" href="/" target="_blank" rel="noopener noreferrer"><span class="link"><span class="logo-web">Web</span>Studio</span></a>
@@ -36,17 +36,22 @@
                         +380961111111
                 </a>               
             </div>
-        </nav>        
-        
+        </nav>
+        <button class="mobile-menu-btn">
+            <svg>
+                <use href="./images/sprite.svg#menu-icon"></use>
+                <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+        </button>       
         </div>       
-    </header> -->
+    </header>
     <main>        
-        <!-- <section class="title-section overlay">
-            <div class="hero">
+         <section class="title-section overlay">
+            <div class="hero container">
                 <h1 class="title-hero">Эффективные решения<br> для вашего бизнеса</h1>
                 <button type="button" data-modal-open class="button-hero">Заказать услугу</button>
             </div>
-        </section>         -->
+        </section>         
         <section class="section-mark">
             <div class="container">
                 <h2 class="visually-hidden">Что мы ценим в наших сотрудниках</h2>
@@ -361,7 +366,7 @@
             </div>
         </div>        
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="btn-close" data-modal-close>
                 <svg class="btn-close-icon">
@@ -414,7 +419,7 @@
             </form>            
         </div>
     </div>
-    <script src="./JS/modal.js"></script> -->
+    <script src="./JS/modal.js"></script> 
 </body>
 
 </html>

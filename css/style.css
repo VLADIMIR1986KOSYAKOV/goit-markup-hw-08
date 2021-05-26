@@ -322,10 +322,18 @@ address {
   color: var(--accent-color);
 }
 
-.menu-link {
-  display: flex;
-  transition: color var(--animation);
-  margin-left: auto;
+@media screen and (max-width: 767.98px) {
+  .menu-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-link {
+    display: flex;
+    transition: color var(--animation);
+    margin-left: auto;
+  }
 }
 
 .link-mailto {
@@ -334,7 +342,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--mailto-color);
+  color: #757575;
   display: block;
   font-weight: normal;
   line-height: 1.71;
@@ -449,9 +457,17 @@ address {
   transform: scaleX(1);
 }
 
-.menu {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .menu__item {
@@ -1020,15 +1036,37 @@ address {
   align-items: center;
 }
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/Img9.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/Img9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile.jpg);
+    background-color: #2f303a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-mobile.jpg);
+    background-color: #2f303a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
 }
 
 .examples-overlay {
@@ -1608,6 +1646,13 @@ textarea {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767.98px) {
+  .header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .footer {
