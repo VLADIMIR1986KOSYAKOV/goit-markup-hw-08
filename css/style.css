@@ -508,6 +508,12 @@ address {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .menu-button .icon-close {
   display: none;
 }
@@ -518,6 +524,28 @@ address {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.page__header {
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 760px;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .socials-list {
